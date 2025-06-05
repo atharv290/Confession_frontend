@@ -13,7 +13,7 @@ const PostConfession = ({ onPost }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5500/confession", {
+      const response = await fetch("https://confession-frontend.vercel.app/confession", {
         method: "POST",
         credentials: "include",
         headers: {
