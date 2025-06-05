@@ -27,7 +27,7 @@ const Login = () => {
       setError("Both fields are required 💡");
       return;
     }
-    const response = await fetch("http://localhost:5500/login", {
+    const response = await fetch("https://confession-backend-o21o.onrender.com/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
