@@ -23,7 +23,7 @@ const SignUp = () => {
 
     const { username, email, password, confirmPassword } = formData;
 
-    const response = await fetch("http://localhost:5500/signup", {
+    const response = await fetch("https://confession-frontend.vercel.app/signup", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
