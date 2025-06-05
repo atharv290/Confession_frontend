@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const checkToken = async () => {
       try {
-        const response = await fetch("http://localhost:5500/get", {
+        const response = await fetch("https://confession-frontend.vercel.app/get", {
           method: "GET",
           credentials: "include",
         });
@@ -24,7 +24,7 @@ const Home = () => {
 
     const fetchConfessions = async () => {
       try {
-        const res = await fetch("http://localhost:5500/confessions",
+        const res = await fetch("https://confession-frontend.vercel.app/confessions",
             {
                 credentials: "include"
             });
@@ -45,7 +45,7 @@ const Home = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:5500/logout", {
+      const response = await fetch("https://confession-frontend.vercel.app/logout", {
         method: "POST",
         credentials: "include",
       });
